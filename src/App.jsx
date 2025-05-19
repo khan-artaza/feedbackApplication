@@ -14,7 +14,7 @@ const App = () => {
   let [numOfAvg, setNumOfAvg] = useState(0);
   let [numOfBad, setNumOfBad] = useState(0);
   return (
-    <div className="w-full  bg-stone-200 flex gap-4 p-8 justify-center items-center flex-col lg:flex-row">
+    <div className="w-full h-screen  bg-stone-200 flex gap-4 p-8 justify-center items-center flex-col lg:flex-row">
       <div className="w-[60%] h-[90%] pb-6 bg-white rounded-2xl shadow-xl/20 lg:w-[40%]">
       
         <Top logo="ri-wechat-line" heading="Feedback" />
