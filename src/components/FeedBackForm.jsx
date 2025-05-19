@@ -96,7 +96,8 @@ const FeedBackForm = ({ dataArr, setDataArr, numOfGood, numOfBad, numOfAvg, setN
         type="submit"
         value="Submit Now"
         className="bg-gradient-to-r from-violet-500 via-30% to-sky-500 to-90% p-2 text-white font-bold cursor-pointer rounded w-[30%] shadow-lg shadow-sky-600/50 active:scale-[0.95]"
-      />
+        />
+        <h2 className="text-sm opacity-75">Made by khan-artaza</h2>
     </form>
   );
 };
