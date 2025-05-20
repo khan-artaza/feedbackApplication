@@ -29,17 +29,17 @@ let clutter = tempArr.map((obj)=>{
 console.log(clutter);
 
 
-
-  
   return (
     <div className="w-full h-[70%] overflow-hidden flex flex-col px-4 gap-4">
-      <div className="upperCard relative flex items-end gap-4 w-full">
-        <div className="card w-[35%] rounded-lg p-2 bg-lime-600 text-white">
+      <div className="upperCard relative flex flex-col lg:flex-row  lg:items-end gap-4 w-full">
+        <div className="card w-[75%] lg:w-[35%] rounded-lg p-2 bg-lime-600 text-white">
           <h3 className="text-sm font-semibold w-full">Rated as Good : <span className="bg-lime-400 px-4 rounded-lg text-black opacity-75 ">{numOfGood}</span></h3>
           <h1 className="text-4xl font-bold">{Math.floor((numOfGood/numOFRating)*100)}%</h1>
           <p className="text-xs text-gray-100">Users rated this app as helpful and effective.</p>
         </div>
-        <div className="card  rounded-lg p-2 text-black">
+
+        <div className=" w-fit flex flex-col lg:flex-row">
+          <div className="card  rounded-lg p-2 text-black">
           <h3 className="text-xs text-gray-600 font-semibold w-full">Rated as Average</h3>
           <h1 className="text-xl text-gray-800">{numOfAvg}</h1>
         </div>
@@ -47,10 +47,13 @@ console.log(clutter);
           <h3 className="text-xs text-gray-600 font-semibold w-full">Rated as Bad</h3>
           <h1 className="text-xl text-red-700">{numOfBad}</h1>
         </div>
-        <div className="card absolute right-5 bottom-0  rounded-lg p-2 text-black bg-[#D8CCFA]">
+        <div className="card absolute right-5 lg:bottom-0  rounded-lg p-2 text-black bg-[#D8CCFA]">
           <h3 className="text-xs text-gray-600 font-semibold w-full">Total Feedback</h3>
           <h1 className="text-xl font-semibold text-violet-500">{numOFRating}</h1>
         </div>
+        </div>
+
+       
       </div>
       <div className="bg-violet-100 px-2  pt-2 h-[70%] rounded-xl">
       <h2 className="font-medium opacity-50 mb-1">User's Comment</h2>

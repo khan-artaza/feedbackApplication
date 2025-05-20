@@ -14,8 +14,8 @@ const App = () => {
   let [numOfAvg, setNumOfAvg] = useState(0);
   let [numOfBad, setNumOfBad] = useState(0);
   return (
-    <div className="w-full h-screen  bg-stone-200 flex gap-4 p-8 justify-center items-center flex-col lg:flex-row">
-      <div className="w-[60%] h-[90%] pb-6 bg-white rounded-2xl shadow-xl/20 lg:w-[40%]">
+    <div className="w-full relative  bg-stone-200 flex gap-4 p-8 justify-center items-center flex-col lg:flex-row">
+      <div className="w-full lg:w-[60%] top-0 mt-2 h-[90%] pb-10 bg-white rounded-2xl shadow-xl/20 lg:w-[40%]">
       
         <Top logo="ri-wechat-line" heading="Feedback" />
         <Content
@@ -25,7 +25,7 @@ const App = () => {
         <FeedBackForm dataArr={dataArr} setDataArr={setDataArr} numOfGood={numOfGood} numOfBad={numOfBad} numOfAvg={numOfAvg} setNumOfGood={setNumOfGood} setNumOfBad={setNumOfBad} setNumOfAvg={setNumOfAvg}/>
       </div>
 
-      <div className="w-[60%] h-[80%] bg-white rounded-2xl shadow-xl/20 ">
+      <div className="w-full lg:w-[60%] h-[80%] bg-white rounded-2xl shadow-xl/20 mb-20 lg:mb-0">
         <Top logo="ri-line-chart-fill" heading="Stats" />
         <Content
           text="How Users Feel So Far"
