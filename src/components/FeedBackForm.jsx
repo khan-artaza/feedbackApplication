@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const FeedBackForm = ({ dataArr, setDataArr, numOfGood, numOfBad, numOfAvg, setNumOfGood, setNumOfBad, setNumOfAvg }) => {
   let [feedbackType, setFeedbackType] = useState("");
@@ -24,6 +25,7 @@ const FeedBackForm = ({ dataArr, setDataArr, numOfGood, numOfBad, numOfAvg, setN
     setDataArr(tempArr);
     setFeedbackType("");
     reset();
+    toast.success("Your response has been recorded.")
   }
   console.log(dataArr);
   localStorage.setItem("feedbackData", JSON.stringify(dataArr));
