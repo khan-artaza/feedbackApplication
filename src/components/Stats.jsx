@@ -55,7 +55,7 @@ console.log(clutter);
 
        
       </div>
-      <div className="bg-violet-100 px-2  pt-2 h-[70%] rounded-xl">
+      <div className="bg-violet-100 px-2 pb-10 pt-2 h-[70%] rounded-xl">
       <h2 className="font-medium opacity-50 mb-1">User's Comment</h2>
       <div className="commentSection w-full px-2 h-[50%] overflow-auto flex flex-col gap-2">
         {clutter}
