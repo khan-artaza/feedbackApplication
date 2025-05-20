@@ -25,7 +25,7 @@ const App = () => {
         <FeedBackForm dataArr={dataArr} setDataArr={setDataArr} numOfGood={numOfGood} numOfBad={numOfBad} numOfAvg={numOfAvg} setNumOfGood={setNumOfGood} setNumOfBad={setNumOfBad} setNumOfAvg={setNumOfAvg}/>
       </div>
 
-      <div className="w-full lg:w-[60%] h-[80%] bg-white rounded-2xl shadow-xl/20 mb-20 lg:mb-0">
+      <div className="w-full lg:w-[60%] lg:h-[80%] bg-white rounded-2xl shadow-xl/20 mb-20 lg:mb-0">
         <Top logo="ri-line-chart-fill" heading="Stats" />
         <Content
           text="How Users Feel So Far"
