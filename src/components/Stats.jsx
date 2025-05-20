@@ -34,7 +34,7 @@ console.log(clutter);
       <div className="upperCard relative flex flex-col lg:flex-row  lg:items-end gap-4 w-full">
         <div className="card w-[75%] lg:w-[35%] rounded-lg p-2 bg-lime-600 text-white">
           <h3 className="text-sm font-semibold w-full">Rated as Good : <span className="bg-lime-400 px-4 rounded-lg text-black opacity-75 ">{numOfGood}</span></h3>
-          <h1 className="text-4xl font-bold">{Math.floor((numOfGood/numOFRating)*100)}%</h1>
+          <h1 className="text-4xl font-bold">{Math.floor((numOfGood/numOFRating)*100)? Math.floor((numOfGood/numOFRating)*100) : "0"}%</h1>
           <p className="text-xs text-gray-100">Users rated this app as helpful and effective.</p>
         </div>
 
